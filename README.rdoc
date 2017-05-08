@@ -3,6 +3,6 @@
 This is the finance tracker app from the Complete Ruby on Rails Developer course
 
 see in browser here
-https://git.heroku.com/stark-everglades-95514.git/
+https://finance-tracker-ahmad.herokuapp.com
 
 Ahmad Abuadas
