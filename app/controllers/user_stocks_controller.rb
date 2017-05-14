@@ -41,7 +41,6 @@ class UserStocksController < ApplicationController
       end
     end
     
-
     respond_to do |format|
       if @user_stock.save
         format.html { redirect_to my_portfolio_path, 
@@ -52,7 +51,7 @@ class UserStocksController < ApplicationController
         format.json { render json: @user_stock.errors, status: :unprocessable_entity }
       end
     end
-  end
+   end
 
   # PATCH/PUT /user_stocks/1
   # PATCH/PUT /user_stocks/1.json
