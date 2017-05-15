@@ -9,6 +9,7 @@ class UsersController < ApplicationController
        
     end
     
+    
     def search
     @users = User.search(params[:search_param])
         if @users
@@ -27,5 +28,10 @@ class UsersController < ApplicationController
             else
                  redirect_to my_friends_path, flash[:error] = "There was an error with adding user as friend."
             end
+    end
+    
+    def show
+        @user = User.find(params[:id])
+        @user_stocks = @user.stocks
     end
 end
